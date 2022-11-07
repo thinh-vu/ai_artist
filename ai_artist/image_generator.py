@@ -3,7 +3,7 @@ from .util import *
 import os
 
 def env_setup():
-  command_ls = "nvidia-smi| pip install git+https://github.com/huggingface/huggingface_hub.git | pip install diffusers | pip install transformers scipy ftfy | pip install accelerate"
+  command_ls = "nvidia-smi| pip install git+https://github.com/huggingface/huggingface_hub.git | pip install diffusers | pip install transformers | pip install scipy | pip install ftfy | pip install accelerate"
   os.system(command_ls)
 
 def login(token):
