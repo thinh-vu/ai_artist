@@ -10,7 +10,7 @@ Go to the Google Colab menu: Select `Runtime` > `Change runtime type` and make s
 ![gpu_setting](./src/Google%20Colab%20runtime%20GPU.png)
 
 ## 2.2. How to install this package?
-Run this command in the terminal `!pip install git+https://github.com/huggingface/huggingface_hub.git`
+Run this command in the terminal `!pip install git+https://github.com/huggingface/ai_artist.git`
 _(*) You might need to insert a `!` before your command when running terminal commands on Google Colab._
 
 ## Function references
