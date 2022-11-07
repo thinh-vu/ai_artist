@@ -6,7 +6,7 @@ import torch
 from diffusers import StableDiffusionPipeline
 
 def env_setup():
-  command_ls = "pip install git+https://github.com/huggingface/huggingface_hub.git | pip install diffusers | pip install transformers scipy ftfy"
+  command_ls = "nvidia-smi| pip install git+https://github.com/huggingface/huggingface_hub.git | pip install diffusers | pip install transformers scipy ftfy"
   os.system(command_ls)
 
 def login(token):
@@ -16,7 +16,7 @@ def login(token):
   return "Your token has been saved to /root/.huggingface/token"
 
 def pipe_gen(token):
-  login()
+  login(token)
   pipe = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4", revision="fp16", torch_dtype=torch.float16)  
   pipe = pipe.to("cuda")
   return pipe
