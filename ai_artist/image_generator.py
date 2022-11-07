@@ -1,15 +1,15 @@
 # I. Transcribe Youtube Videos
 from .util import *
 import os
-from huggingface_hub.hf_api import HfFolder #Save HuggingFace login token
 
 def env_setup():
-  command_ls = "nvidia-smi| pip install git+https://github.com/huggingface/huggingface_hub.git | pip install diffusers | pip install transformers scipy ftfy"
+  command_ls = "nvidia-smi| pip install git+https://github.com/huggingface/huggingface_hub.git | pip install diffusers | pip install transformers scipy ftfy | pip install accelerate"
   os.system(command_ls)
 
 def login(token):
   """Login to HuggingFace using your token at https://huggingface.co/settings/tokens"""
   env_setup()
+  from huggingface_hub.hf_api import HfFolder
   HfFolder.save_token(token)
   return "Your token has been saved to /root/.huggingface/token"
 
