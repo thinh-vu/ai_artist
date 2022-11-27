@@ -8,13 +8,13 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ai_artist"
 description = "ai_artist made generating image easy using Stable Diffusion AI model."
-version = "0.0.1"
+version = "0.0.2"
 readme = "README.md"
 requires-python = ">=3.7"
 dependencies = [
-    "diffusers==0.4.0",
-    "transformers",
-    "scipy",
-    "ftfy",
-    "huggingface_hub @ git+https://github.com/huggingface/huggingface_hub.git"
-]
+                "diffusers",
+                "transformers",
+                "scipy",
+                "ftfy",
+                "accelerate"
+                ]

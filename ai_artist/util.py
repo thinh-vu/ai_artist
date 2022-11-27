@@ -1,4 +1,5 @@
 import os
+import subprocess
 
 # Working with file systems
 def lmt_detect():
@@ -11,6 +12,20 @@ def lmt_detect():
 
 ROOT_DIR = os.path.abspath(os.curdir)
 LMT = lmt_detect()
+
+def runcmd(cmd, verbose = False, *args, **kwargs):
+    """Run cmd commands"""
+    process = subprocess.Popen(
+        cmd,
+        stdout = subprocess.PIPE,
+        stderr = subprocess.PIPE,
+        text = True,
+        shell = True
+    )
+    std_out, std_err = process.communicate()
+    if verbose:
+        print(std_out.strip(), std_err)
+    pass
 
 # Cleaning
 def memory_cleaner():
