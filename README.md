@@ -20,11 +20,10 @@
 _(*) You might need to insert a `!` before your command when running terminal commands on Google Colab._
 
 ## 2.2. Set up your project
-
-1. Import the whole package to your project: `from ai_artist import *`
-2. Install dependencies: `!pip install transformers`
-3. Set up the environment: `initialize()`
-4. Save Huggingface login info to use the pre-trained model: `login('YOUR_HUGGINGFACE_KEY')`
+1. Input the Huggingface token key to the Google Colab form, run the code to save login info by the `login()` function
+2. Import the whole package to your project: `from ai_artist import *`
+3. Install dependencies: `!pip install transformers`
+4. Set up the environment: `initialize()`
 5. Set up the pipeline: `pipe = pipegen()`
 
 ## 2.3. Start generating images
