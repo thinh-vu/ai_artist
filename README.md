@@ -28,6 +28,7 @@ _(*) You might need to insert a `!` before your command when running terminal co
 
 ## 2.3. Start generating images
 6. Provide your image description to the prompt: `image_gen("YOUR_IMAGE_DESCRIPTION", pipe)`
+7. Save your image `image.save(f'INPUT_YOUR_IMAGE_NAME')`
 
 # III. RERERENCES
 ## 3.1. Get the HuggingFace API key
