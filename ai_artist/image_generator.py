@@ -1,4 +1,3 @@
-# I. Transcribe Youtube Videos
 from .util import *
 import os
 import torch
