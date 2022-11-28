@@ -9,6 +9,7 @@
 </div>
 
 # II. HOW TO USE THIS PROJECT
+> View a quick demo video [here](https://www.youtube.com/watch?v=L6uo5F2SS9o&t=31s&ab_channel=Python%E1%BB%A8ngD%E1%BB%A5ng)
 
 ## 2.1. Install this package
 
@@ -30,9 +31,9 @@ _(*) You might need to insert a `!` before your command when running terminal co
 6. Provide your image description to the prompt: `image_gen("YOUR_IMAGE_DESCRIPTION", pipe)`
 
 # III. RERERENCES
-## 3.1. Get HuggingFace API key
+## 3.1. Get the HuggingFace API key
 
-**Generate a token key** with **read** permission. Read the doc [here](https://huggingface.co/docs/hub/security-tokens)
+**Generate a token key** with a **read** permission. Read the doc [here](https://huggingface.co/docs/hub/security-tokens)
 
 **About Huggingface**
 
@@ -43,7 +44,11 @@ _(*) You might need to insert a `!` before your command when running terminal co
 ## 3.2. Google Colab and GPU runtime are highly recommended
 Go to the Google Colab menu: Select `Runtime` > `Change runtime type` and make sure that `GPU` has been chosen. You can run this AI model way faster with GPU on Google Colab than the normal CPU or your personal computer.
 
+<div align='center'>
+
 ![gpu_setting](https://raw.githubusercontent.com/thinh-vu/ur_audio_sub/main/src/Google%20Colab%20runtime%20GPU.png)
+
+</div>
 
 ### Stable Diffusion & StabilityAI
 - Stable Diffusion on Github: [here](https://github.com/CompVis/stable-diffusion)
